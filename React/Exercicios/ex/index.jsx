@@ -4,9 +4,10 @@ import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
 
 import Field from "./Field";
+import FieldReducer from "./FieldReducer";
 
 const reducers = combineReducers({
-  field: () => ({ value: "Opa!" }),
+  field: FieldReducer,
 });
 
 ReactDOM.render(
