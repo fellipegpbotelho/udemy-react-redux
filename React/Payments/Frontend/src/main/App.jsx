@@ -6,12 +6,14 @@ import Header from '../common/template/Header';
 import SideBar from '../common/template/SideBar';
 import Footer from '../common/template/Footer';
 
+import Routes from './Routes';
+
 export default () => (
   <div className="wrapper">
     <Header />
     <SideBar />
     <div className="content-wrapper">
-      <h1>Conteúdo</h1>
+      <Routes />
     </div>
     <Footer />
   </div>
