@@ -7,8 +7,8 @@
   "plugins": ["react", "jsx-a11y", "import"],
   "extends": "airbnb",
   "rules": {
-    "react/prop-types": 0,
-    "jsx-a11y/anchor-has-content": 0,
+    "react/prop-types": "off",
+    "jsx-a11y/anchor-has-content": "off",
     "react/jsx-filename-extension": [
       "error",
       {
@@ -17,6 +17,7 @@
     ],
     "global-require": "off",
     "import/prefer-default-export": "off",
-    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "class-methods-use-this": "off"
   }
 }
