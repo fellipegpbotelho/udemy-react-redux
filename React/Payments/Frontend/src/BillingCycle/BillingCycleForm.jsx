@@ -9,7 +9,9 @@ import { init } from './BillingClycleActions';
 
 class BillingCycleForm extends Component {
   render() {
-    const { handleSubmit, readOnly } = this.props;
+    const {
+      handleSubmit, readOnly, submitClass, submitLabel, init,
+    } = this.props;
     return (
       <form role="form" onSubmit={handleSubmit}>
         <div className="box-body">
@@ -41,10 +43,10 @@ class BillingCycleForm extends Component {
           />
         </div>
         <div className="box-footer">
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button type="submit" className={`btn btn-${submitClass}`}>
+            {submitLabel}
           </button>
-          <button type="button" className="btn btn-default" onClick={this.props.init}>
+          <button type="button" className="btn btn-default" onClick={init}>
             Cancelar
           </button>
         </div>

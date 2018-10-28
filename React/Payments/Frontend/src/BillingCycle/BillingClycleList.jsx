@@ -16,7 +16,7 @@ class BillingCycleList extends Component {
         <td>{item.name}</td>
         <td>{item.month}</td>
         <td>{item.year}</td>
-        <td>
+        <td className="table-actions">
           <button className="btn btn-warning" onClick={() => this.props.showUpdate(item)}>
             <i className="fa fa-pencil" />
           </button>
