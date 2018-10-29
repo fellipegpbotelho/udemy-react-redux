@@ -6,6 +6,7 @@ import { reduxForm, Field, formValueSelector } from 'redux-form';
 import LabelAndInput from '../common/form/LabelAndInput';
 
 import ItemList from './ItemList';
+import Summary from './Summary';
 
 import { init } from './BillingClycleActions';
 
@@ -43,6 +44,7 @@ class BillingCycleForm extends Component {
             placeholder="Informe o ano"
             readOnly={readOnly}
           />
+          <Summary credit={1000} debt={100} />
           <ItemList
             cols="12 6"
             readOnly={readOnly}
