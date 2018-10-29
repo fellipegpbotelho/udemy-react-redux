@@ -8,14 +8,14 @@ import thunk from 'redux-thunk';
 
 import reducers from './main/Reducers';
 
-import App from './main/App';
+import Routes from './main/Routes';
 
 const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 const store = applyMiddleware(multi, thunk, promise)(createStore)(reducers, reduxDevTools);
 
 const MyMoney = () => (
   <Provider store={store}>
-    <App />
+    <Routes />
   </Provider>
 );
 

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default ({ path, icon, label }) => (
   <li>
-    <a href={path}>
+    <Link to={path}>
       <i className={`fa fa-${icon}`} />
       &nbsp;
       <span>{label}</span>
-    </a>
+    </Link>
   </li>
 );

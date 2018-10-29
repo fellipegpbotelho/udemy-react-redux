@@ -7,15 +7,11 @@ import SideBar from '../common/template/SideBar';
 import Footer from '../common/template/Footer';
 import Messages from '../common/msg/Messages';
 
-import Routes from './Routes';
-
-export default () => (
+export default ({ children }) => (
   <div className="wrapper">
     <Header />
     <SideBar />
-    <div className="content-wrapper">
-      <Routes />
-    </div>
+    <div className="content-wrapper">{children}</div>
     <Footer />
     <Messages />
   </div>
