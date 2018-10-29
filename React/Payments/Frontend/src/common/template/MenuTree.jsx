@@ -5,7 +5,7 @@ export default ({ icon, label, children }) => (
     <a href>
       <i className={`fa fa-${icon}`} />
       &nbsp;
-      {label}
+      <span>{label}</span>
       <i className="fa fa-angle-right pull-right" />
     </a>
     <ul className="treeview-menu">{children}</ul>

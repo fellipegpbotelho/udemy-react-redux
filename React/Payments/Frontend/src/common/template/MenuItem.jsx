@@ -5,7 +5,7 @@ export default ({ path, icon, label }) => (
     <a href={path}>
       <i className={`fa fa-${icon}`} />
       &nbsp;
-      {label}
+      <span>{label}</span>
     </a>
   </li>
 );
