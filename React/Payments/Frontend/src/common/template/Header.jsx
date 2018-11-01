@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Navbar from './Navbar';
+
 export default () => (
   <header className="main-header">
     <a href="/#/" className="logo">
@@ -15,6 +17,7 @@ export default () => (
     </a>
     <nav className="navbar navbar-static-top">
       <a href="/#/" className="sidebar-toggle" data-toggle="offcanvas" />
+      <Navbar />
     </nav>
   </header>
 );
